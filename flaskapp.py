@@ -49,10 +49,7 @@ def analyze(word):
             num_vowels += 1
 
     # render_template passes all variables into analyze.html
-    return render_template('analyze.html',
-                           word=word,
-                           num_chars=num_chars,
-                           num_vowels=num_vowels)
+    return f"Word: {word}, Characters: {num_chars}, Vowels: {num_vowels}"
 
 
 
